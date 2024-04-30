@@ -193,11 +193,57 @@ footer p {
 }
 /* FIM RODAPE */
 
+#contato {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+  appearance: none;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  margin: 1em;
+  font-size: larger;
+  display: grid;
+}
+
+.formulario {
+  display: flex;
+  margin: 1em;
+  border-radius: 2em;
+  border: 1px;
+  border-color: #181818;
+  border-style: groove;
+  padding: 1em;
+}
+
+.formulario img {
+  margin-right: 2em;
+  border-radius: 2em;
+}
+
+input, textarea{
+  border-radius: 10px;
+  appearance: none;
+  border-style: solid;
+  font-size: 1em;
+  border-color: #181818;
+}
+
+
 
 /* RESPONSIVIDADE */
 
 @media (max-width: 1050px){
   /* INICIO MAIN */
+
   .main h1{
     font-size: 45px;
   }
@@ -255,4 +301,20 @@ footer p {
   }
   /* FIM RODAPE */
 
+}
+
+@media (max-width: 900px){
+  .formulario img {
+    display: none;
+  }
+
+  .formulario {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 500px){
+  input, label, textarea {
+    font-size: 15px;
+  }
 }
